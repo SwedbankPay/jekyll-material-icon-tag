@@ -74,6 +74,7 @@ agreement][cla].
 [gem-badge]:            https://badge.fury.io/rb/jekyll-material-icon-tag.svg
 [gem-url]:              https://rubygems.org/gems/jekyll-material-icon-tag
 [gems]:                 https://rubygems.org
+[github]:               https://github.com/SwedbankPay/jekyll-material-icon-tag/
 [jekyll]:               https://jekyllrb.com/
 [license-badge]:        https://img.shields.io/github/license/SwedbankPay/jekyll-material-icon-tag
 [license]:              https://opensource.org/licenses/Apache-2.0
