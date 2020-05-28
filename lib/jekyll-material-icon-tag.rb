@@ -8,16 +8,19 @@ class IconTag < Liquid::Tag
   end
 
   def render(_)
-    iconname, type = parse_parameters(@text)
+    iconname, type = parse_parameters @text
 
-    unless type.nil?
-      "<i class=\"material-icons-#{type}\">#{iconname.strip}</i>"
-    else
+    puts type
+
+    if type.nil?
       "<i class=\"material-icons\">#{iconname.strip}</i>"
+    else
+      "<i class=\"material-icons-#{type.strip}\">#{iconname.strip}</i>"      
     end
   end
 
   def parse_parameters(context)
+    puts "Parsing parameters"
     parameters = Liquid::Template.parse(@markup).render context
     parameters.strip!
     parameters.split(/\s+/)
