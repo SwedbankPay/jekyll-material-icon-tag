@@ -7,12 +7,15 @@ gem 'jekyll-material-icon-tag'
 ```
 
 And then execute:
+
 ```shell
-$ bundle install
+bundle install
 ```
+
 Or install it yourself as:
+
 ```shell
-$ gem install jekyll-material-icon-tag
+gem install jekyll-material-icon-tag
 ```
 
 ## Usage
@@ -25,9 +28,17 @@ To render a Material Design Icon use as follows:
 {% icon name_of_icon_you_want %}
 ```
 
+You can also add style if you want a different material icon style:
+
+```liquid
+{% icon name_of_icon_you_want two-tone %}
+{% icon another_icon_perhaps round %}
+{% icon the_outlined_one outlined %}
+```
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-material-icon-tag. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/jekyll-material-icon-tag/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/SwedbankPay/jekyll-material-icon-tag. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/SwedbankPay/jekyll-material-icon-tag/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 

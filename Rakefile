@@ -27,14 +27,23 @@ end
 
 # Test generated output has valid HTML and links.
 task :test => :build do
-  file = File.open("_site/index.html")
-  content = file.read
+  File.open("_site/index.html") do |file|
+    content = file.read
 
-  if content.include? "{% icon"
-    raise "Hell"
+    if content.include? "{% icon"
+      raise "Hell"
+    end
+
+    unless content.include? "material-icons-two-tone"
+      raise "Hell of two tones"
+    end
+
+    unless content.include? "material-icons-two-tone"
+      raise "Hell of two tones"
+    end
+
+    file.close
   end
-
-  file.close
 end
 
 task :default => ["build"]
