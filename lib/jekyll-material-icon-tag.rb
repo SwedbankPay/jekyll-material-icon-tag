@@ -19,11 +19,9 @@ class IconTag < Liquid::Tag
     end
   end
 
-  def parse_parameters(context)
-    puts "Parsing parameters"
-    parameters = Liquid::Template.parse(@markup).render context
-    parameters.strip!
-    parameters.split(/\s+/)
+  def parse_parameters(text)
+    text.strip!
+    text.split(/\s+/)
   end
   
   Liquid::Template.register_tag "icon", self
