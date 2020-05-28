@@ -34,6 +34,10 @@ task :test => :build do
       raise "Hell"
     end
 
+    if content.exclude? "material-icons-two-tone"
+      raise "Hell of two tones"
+    end
+
     file.close
   end
 end
