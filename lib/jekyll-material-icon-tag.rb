@@ -10,7 +10,6 @@ class IconTag < Liquid::Tag
   def render(_)
     iconname, type = parse_parameters @text
 
-
     if type.nil?
       "<i class=\"material-icons\">#{iconname.strip}</i>"
     else
